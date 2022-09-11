@@ -12,39 +12,44 @@
 </head>
 <body>
 <div class="header d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
- <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-     <img src="https://www.evrofasad.by/new-sitetpl/img/logo.png" alt="">
- </a>
- <nav class="menu d-inline-flex mt-2 mt-md-0 ms-md-auto">
-  <a class="me-3 py-2 text-dark text-decoration-none" href="/">Главная страница</a>
-  <div class="menu-item me-3 py-2 text-dark text-decoration-none ">
-   О компании
-   <div class="short_menu">
-    <a href="/contact">Контакты</a>
-    <a href="/payment">Способы оплаты</a>
-   </div>
-  </div>
-  <div class="menu-item me-3 py-2 text-dark text-decoration-none">
-   Алюминиевые конструкции
-   <div class = 'short_menu'>
-    <a href="/products/window">Окна из алюминия</a>
-    <a href="/products/doors">Двери из алюминия</a>
-    <a href="/products/fire_door">Противопожарные двери</a>
-    <a href="/products/dym_door">Дымонепроницаемые двери</a>
-    <a href="/products/patio">Наклонно-сдвижные системы PATIO</a>
-    <a href="/products/sl">Подъёмно-сдвижные системы</a>
-    <a href="/products/fasad">Фасадное остекление</a>
-   </div>
-  </div>
-  <div class="menu-item me-3 py-2 text-dark text-decoration-none">
-   Другая продукция
-   <div class = 'short_menu'>
-    <a href="/products/ms">Москитные сетки</a>
-    <a href="/products/windowsill">Подоконники</a>
-   </div>
-  </div>
-     <a class="me-3 py-2 text-dark text-decoration-none" href="/products/callback">Обратный звонок</a>
- </nav>
+    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <img src="https://www.evrofasad.by/new-sitetpl/img/logo.png" alt="">
+    </a>
+    <nav class="menu d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/">Главная страница</a>
+        <div class="menu-item me-3 py-2 text-dark text-decoration-none ">
+            О компании
+            <div class="short_menu">
+                <a href="/contact">Контакты</a>
+                <a href="/payment">Способы оплаты</a>
+            </div>
+        </div>
+        <div class="menu-item me-3 py-2 text-dark text-decoration-none">
+            Алюминиевые конструкции
+            <div class = 'short_menu'>
+                <a href="/products/window">Окна из алюминия</a>
+                <ul class="sub-menu">
+                    <li id="menu-item-391" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-391"><a href="products/window/1">Окна W-62</a></li>
+                    <li id="menu-item-392" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-392"><a href="products/window/2">Окна W-72</a></li>
+                    <li id="menu-item-393" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-393"><a href="products/window/3">Вентиляционная створка</a></li>
+                </ul>
+                <a href="/products/doors">Двери из алюминия</a>
+                <a href="/products/fire_door">Противопожарные двери</a>
+                <a href="/products/dym_door">Дымонепроницаемые двери</a>
+                <a href="/products/patio">Наклонно-сдвижные системы PATIO</a>
+                <a href="/products/sl">Подъёмно-сдвижные системы</a>
+                <a href="/products/fasad">Фасадное остекление</a>
+            </div>
+        </div>
+        <div class="menu-item me-3 py-2 text-dark text-decoration-none">
+            Другая продукция
+            <div class = 'short_menu'>
+                <a href="/products/ms">Москитные сетки</a>
+                <a href="/products/windowsill">Подоконники</a>
+            </div>
+        </div>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="/products/callback">Обратный звонок</a>
+    </nav>
 </div>
 {% block content %}{% endblock %}
 <footer class="pt-4 my-md-5 pt-md-5 border-top">

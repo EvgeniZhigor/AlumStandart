@@ -4,6 +4,13 @@ from .forms import OrderForm
 from django.http import HttpResponse
 from . import models
 from django.utils.translation import gettext as _
+from django.views.generic import DetailView
+
+
+class WindowDetailView(DetailView):
+    model = Window
+    template_name = 'products/windows.html'
+    context_object_name = 'window'
 
 
 def products_home(request):
@@ -80,3 +87,5 @@ def other(request):
 
 def callback(request):
     return render(request, 'products/callback.html')
+
+
