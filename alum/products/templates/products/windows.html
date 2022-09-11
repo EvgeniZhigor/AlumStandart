@@ -1,0 +1,14 @@
+{% extends 'products/base.html' %}
+
+{% block title %}
+Окна из алюминия
+{% endblock %}
+<body class="body">
+{% block content %}
+<div>
+    <h3>{{ window.name}}</h3>
+    <p>{{window.description}}</p>
+    <p>{{window.feature}}</p>
+</div>
+{% endblock %}
+

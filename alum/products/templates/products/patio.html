@@ -1,0 +1,17 @@
+{% extends 'products/base.html' %}
+
+{% block title %}
+Наклонно-сдвижные системы
+{% endblock %}
+<body>
+{% block content %}
+{% for i in patiodoor %}
+<div class = "alert-warning">
+    <h3>{{ i.name}}</h3>
+    <p>{{i.description}}</p>
+    <p>{{i.feature}}</p>
+</div>
+{%endfor%}
+{% endblock %}
+</body>
+</html>

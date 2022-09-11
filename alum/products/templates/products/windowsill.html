@@ -1,0 +1,16 @@
+{% extends 'products/base.html' %}
+
+{% block title %}
+Подоконники
+{% endblock %}
+<body>
+{% block content %}
+{% for i in windowsill_1 %}
+<div class = "alert-warning">
+    <h3>{{ i.name}}</h3>
+    <p>{{i.description}}</p>
+</div>
+{%endfor%}
+{% endblock %}
+</body>
+</html>

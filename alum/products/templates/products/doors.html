@@ -1,0 +1,17 @@
+{% extends 'products/base.html' %}
+
+{% block title %}
+Двери из алюминия
+{% endblock %}
+<body>
+{% block content %}
+{% for i in door %}
+<div class = "alert-warning">
+    <h3>{{ i.name}}</h3>
+    <p>{{i.description}}</p>
+    <p>{{i.feature}}</p>
+</div>
+{%endfor%}
+{% endblock %}
+</body>
+</html>
